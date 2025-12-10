@@ -1,0 +1,4 @@
+<a *ngFor="let item of menuItems" 
+[routerLink]="item.url" 
+routerLinkActive="current-link"
+[routerLinkActiveOptions]="{exact: true}">{{ item.text }}</a>

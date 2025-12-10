@@ -1,0 +1,14 @@
+:host a {
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(40, 160, 0);
+}
+
+:host .current-link {
+    color: #15ff00;
+}
+
+:host a:hover {
+    text-decoration: underline;
+}

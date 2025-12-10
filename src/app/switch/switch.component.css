@@ -1,0 +1,37 @@
+:host {
+    --h-tgl: 16px;
+    --br-tgl: calc(var(--h-tgl) / 2);
+    --w-tgl: calc(2 * var(--h-tgl));
+    --p-tgl: 2px;
+    --w-gap: calc(2 * var(--p-tgl));
+    --s-sld: calc(var(--h-tgl) - var(--w-gap));
+    --br-sld: calc(var(--s-sld) / 2);
+    --ml-sld: calc(var(--w-tgl) - var(--w-gap) - var(--s-sld));
+}
+
+.toggle {
+    background: #eee;
+    width: var(--w-tgl);
+    height: var(--h-tgl);
+    padding: var(--p-tgl);
+    border-radius: var(--br-tgl);
+}
+
+label {
+    width: var(--s-sld);
+    height: var(--s-sld);
+    background: #ccc;
+    display: flex;
+    cursor: pointer;
+    border-radius: var(--br-sld);
+    transition: all 0.25s ease 0s;
+}
+
+input {
+    display: none;
+}
+
+input:checked+label {
+    margin-left: var(--ml-sld);
+    background: #47c;
+}
