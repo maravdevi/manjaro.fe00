@@ -1,0 +1,11 @@
+:host a {
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #2a8022;
+    color: rgb(236, 252, 230);
+}
+
+:host a:hover {
+    background-color: #2a8022d5;
+}

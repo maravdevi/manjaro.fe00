@@ -1,0 +1,16 @@
+:root {
+    --default-bgc: #171717;
+    --default-fgc: #aaa;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    background: var(--default-bgc);
+    color: var(--default-fgc);
+    box-sizing: border-box;
+}
+
+router-outlet {
+    position: absolute;
+}
