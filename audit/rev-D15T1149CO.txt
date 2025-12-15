@@ -1,0 +1,97 @@
+PS I:\broadmark\manjaro.fe00> npm audit 
+# npm audit report
+
+@angular/common  <19.2.16
+Severity: high
+Angular is Vulnerable to XSRF Token Leakage via Protocol-Relative URLs in Angular HTTP Client - https://github.com/advisories/GHSA-58c5-g7wp-6w37
+fix available via `npm audit fix --force`
+Will install @angular/common@21.0.5, which is a breaking change
+node_modules/@angular/common
+  @angular/forms  <=19.2.15
+  Depends on vulnerable versions of @angular/common
+  Depends on vulnerable versions of @angular/platform-browser
+  node_modules/@angular/forms
+  @angular/platform-browser  <=19.2.15
+  Depends on vulnerable versions of @angular/common
+  node_modules/@angular/platform-browser
+  @angular/platform-browser-dynamic  <=19.2.15
+  Depends on vulnerable versions of @angular/common
+  Depends on vulnerable versions of @angular/compiler
+  Depends on vulnerable versions of @angular/platform-browser
+  node_modules/@angular/platform-browser-dynamic
+  @angular/router  <=0.0.0-ROUTERPLACEHOLDER || 2.0.0-rc.0 - 19.2.15
+  Depends on vulnerable versions of @angular/common
+  Depends on vulnerable versions of @angular/platform-browser
+  node_modules/@angular/router
+
+@angular/compiler  <=18.2.14
+Severity: high
+Angular Stored XSS Vulnerability via SVG Animation, SVG URL and MathML Attributes - https://github.com/advisories/GHSA-v4hv-rgfq-gp49
+fix available via `npm audit fix --force`
+Will install @angular/compiler@21.0.5, which is a breaking change
+node_modules/@angular/compiler
+  @angular/compiler-cli  <=18.2.14
+  Depends on vulnerable versions of @angular/compiler
+  node_modules/@angular/compiler-cli
+    @angular-devkit/build-angular  <=19.2.14 || 20.0.0-next.0 - 20.0.0-rc.4
+    Depends on vulnerable versions of @angular-devkit/build-webpack
+    Depends on vulnerable versions of @angular/compiler-cli
+    Depends on vulnerable versions of @babel/runtime
+    Depends on vulnerable versions of @ngtools/webpack
+    Depends on vulnerable versions of esbuild
+    Depends on vulnerable versions of inquirer
+    Depends on vulnerable versions of vite
+    Depends on vulnerable versions of webpack-dev-server
+    node_modules/@angular-devkit/build-angular
+    @ngtools/webpack  <=1.2.13 || 7.0.0-beta.0 - 18.2.21
+    Depends on vulnerable versions of @angular/compiler-cli
+    node_modules/@ngtools/webpack
+
+@babel/runtime  <7.26.10
+Severity: moderate
+Babel has inefficient RegExp complexity in generated code with .replace when transpiling named capturing groups - https://github.com/advisories/GHSA-968p-4wvh-cqc8
+fix available via `npm audit fix --force`
+Will install @angular-devkit/build-angular@21.0.3, which is a breaking change
+node_modules/@babel/runtime
+
+esbuild  <=0.24.2
+Severity: moderate
+esbuild enables any website to send any requests to the development server and read the response - https://github.com/advisories/GHSA-67mh-4wv8-2f99
+fix available via `npm audit fix --force`
+Will install @angular-devkit/build-angular@21.0.3, which is a breaking change
+node_modules/esbuild
+  vite  <=6.1.6
+  Depends on vulnerable versions of esbuild
+  node_modules/vite
+
+tmp  <=0.2.3
+tmp allows arbitrary temporary file / directory write via symbolic link `dir` parameter - https://github.com/advisories/GHSA-52f5-9888-hmc6
+fix available via `npm audit fix --force`
+Will install @angular-devkit/build-angular@21.0.3, which is a breaking change
+node_modules/tmp
+  external-editor  >=1.1.1
+  Depends on vulnerable versions of tmp
+  node_modules/external-editor
+    inquirer  3.0.0 - 8.2.6 || 9.0.0 - 9.3.7
+    Depends on vulnerable versions of external-editor
+    node_modules/inquirer
+      @angular/cli  <=1.4.0-rc.2 || 7.0.0-beta.0 - 18.1.0-rc.1
+      Depends on vulnerable versions of inquirer
+      node_modules/@angular/cli
+
+
+webpack-dev-server  <=5.2.0
+Severity: moderate
+webpack-dev-server users' source code may be stolen when they access a malicious web site with non-Chromium based browser - https://github.com/advisories/GHSA-9jgg-88mc-972h
+webpack-dev-server users' source code may be stolen when they access a malicious web site - https://github.com/advisories/GHSA-4v9v-hfq4-rm2v
+fix available via `npm audit fix --force`
+Will install @angular-devkit/build-angular@21.0.3, which is a breaking change
+node_modules/webpack-dev-server
+  @angular-devkit/build-webpack  <=0.1703.17
+  Depends on vulnerable versions of webpack-dev-server
+  node_modules/@angular-devkit/build-webpack
+
+18 vulnerabilities (4 low, 5 moderate, 9 high)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
