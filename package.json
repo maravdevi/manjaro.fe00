@@ -1,12 +1,13 @@
 {
   "name": "manjaro.fe00",
-  "version": "0.0.0",
+  "version": "0.0.0.00000000",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "generate:actors": "node ./tools/generate-actors.mjs"
   },
   "prettier": {
     "printWidth": 100,
@@ -37,6 +38,8 @@
     "@angular/cli": "^21.0.3",
     "@angular/compiler-cli": "^21.0.0",
     "jsdom": "^27.1.0",
+    "sass": "^1.96.0",
+    "sharp": "^0.34.4",
     "typescript": "~5.9.2",
     "vitest": "^4.0.8"
   }

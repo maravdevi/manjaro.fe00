@@ -1,0 +1,2 @@
+D15T1724COÑ25
+se configura 'angular.json' para que no genere archivos de test.
