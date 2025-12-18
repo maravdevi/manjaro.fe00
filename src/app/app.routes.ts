@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
 
-import { Slide } from './components/slide/slide';
+import { SlideContainer } from './components/slide-container/slide-container';
 
 export const routes: Routes = [
   {
     path: '',
-    component: Slide
+    component: SlideContainer
   }
 ];
