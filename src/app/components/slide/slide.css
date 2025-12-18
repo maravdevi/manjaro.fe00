@@ -1,0 +1,28 @@
+:host {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  overflow: hidden;
+}
+
+.video-container {
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bg-video {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1920px;
+  height: 1080px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
